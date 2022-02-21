@@ -1,0 +1,56 @@
+
+<!DOCTYPE html><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><title>主页</title><link rel="stylesheet" href="/data/user/0/mark.via/files/homepage.css"><style></style></head><body><div class='frosted-glass'></div><div id="content"><div class="search_part"><a class="logo" onclick="window.via.cmd(257);" title="书签">< img class="smaller" src="file:////storage/emulated/0/Android/data/mark.via/files/content/logo.gif" />
+<!DOCTYPE html>
+<html>
+<head>
+<title>获取时间</title>
+<script type="text/javascript">
+window.onload = function(){
+showTime();
+};
+function showTime(){
+var myDate = new Date();
+var year = myDate.getFullYear();
+var month = myDate.getMonth() + 1;
+var date = myDate.getDate();
+var dateArr = ["Sun.","Mon.",'Tues.','Wed.','Thur.','Fri.','Sat.'];
+var day= myDate.getDay();
+var hours = myDate.getHours();
+var minutes = formatTime(myDate.getMinutes());
+var seconds = formatTime(myDate.getSeconds());
+var systemTime = document.getElementById("time");
+systemTime.innerHTML =" 🔅" + dateArr[day] +" " +hours + ":" + minutes +":" + seconds+ "💫";
+setTimeout("showTime()",500);
+}
+//格式化时间：分秒。
+function formatTime (i){
+if(i < 10){
+i = "0" + i;
+}
+return i;
+}
+</script>
+</head>
+<style>
+#time {
+text-align: center;
+background: -webkit-linear-gradient(left, #65a1cd, #C6CC76 25%,#65a1cd 50%,#CE8943 75%,#65a1cd);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-background-size: 200% 100%;
+-webkit-animation: runs 4s infinite linear;
+}
+@-webkit-keyframes runs {
+0% {
+background-position: 0 0;
+}
+100% {
+background-position: -100% 0;
+}
+}
+</style>
+<body>
+<div id ='time'></div>
+</body>
+</html>
+<script>document.title = "(੭'ｰ')੭长风破浪";</script></ a><form onsubmit="return search()" class="search_bar" title="搜索"><button onclick="search()" id="search_submit" value="" aria-label="网页前进"><div class="search icon"></div></button><span><input class="search" onfocus="showButton()" onblur="hideButton()" type="text" value="" autocomplete="off" id="search_input" title="搜索"></span></form></div><script type="text/javascript">function showButton(){document.getElementById("search_submit").style.display="block"}function hideButton(){var a=document.getElementById("search_input").value;""==a&&(document.getElementById("search_submit").style.display="none")}function search(){var a=document.getElementById("search_input").value;return""!=a&&(window.via.searchText(a),document.getElementById("search_input").value=""),!1}</script><script charset="gbk" src="file:///android_asset/opensug.js"></script><script type="text/javascript">function show(str){var searchbox = document.getElementById("search_input"); searchbox.innerHTML = str; searchbox.blur(); search();} var params = {"XOffset":0, "YOffset":0, "fontColor":"#666666", "fontColorHI":"#FFF", "fontSize":"14px", "borderColor":"#eee", "bgcolorHI":"#7B90E3", "sugSubmit":false }; BaiduSuggestion.bind("search_input",params,show); </script></div></body></html>
